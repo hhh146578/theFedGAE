@@ -196,6 +196,7 @@ $(document).ready(function(){
         "CASTRO LABOREIRO DOG",
         "BOUVIER DES ARDENNES",
         "POODLE",
+        "TOY POODLE",
         "ESTRELA MOUNTAIN DOG",
         "FRENCH SPANIEL",
         "PICARDY SHEEPDOG",
@@ -373,7 +374,9 @@ $(document).ready(function(){
         "DANISH-SWEDISH FARMDOG",
         "SOUTHEASTERN EUROPEAN SHEPHERD",
         "THAI BANGKAEW DOG",
-        "MINIATURE BULL TERRIER"
+        "MINIATURE BULL TERRIER",
+        "MIGUELO",
+        "DOLMATIAN"
     ];
     $('#Searchbox').autocomplete({
         appendTo: $("#Searchbox").next(),

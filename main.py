@@ -58,51 +58,117 @@ class contactusHandler(webapp2.RequestHandler):
 class petHandler(webapp2.RequestHandler):
     def get(self):
         title = "Paw Wow - Our Pets"
-        if ('1' in self.request.path ):
+        number = ''
+        if ('/pet1.html' == self.request.path ):
             number = '1'
             template = JINJA_ENVIRONMENT.get_template('pet1.html')
-        elif ('2' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet2.html' == self.request.path ):
             number = '2'
             template = JINJA_ENVIRONMENT.get_template('pet2.html')
-        elif ('3' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet3.html' == self.request.path ):
             number = '3'
             template = JINJA_ENVIRONMENT.get_template('pet3.html')
-        elif ('4' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet4.html' == self.request.path ):
             number = '4'
             template = JINJA_ENVIRONMENT.get_template('pet4.html')
-        elif ('5' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet5.html' == self.request.path ):
             number = '5'
             template = JINJA_ENVIRONMENT.get_template('pet5.html')
-        elif ('6' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet6.html' == self.request.path ):
             number = '6'
             template = JINJA_ENVIRONMENT.get_template('pet6.html')
-        elif ('7' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet7.html' == self.request.path ):
             number = '7'
             template = JINJA_ENVIRONMENT.get_template('pet7.html')
-        elif ('8' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet8.html' == self.request.path ):
             number = '8'
             template = JINJA_ENVIRONMENT.get_template('pet8.html')
-        elif ('9' in self.request.path ):
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
+        elif ('/pet9.html' == self.request.path ):
             number = '9'
             template = JINJA_ENVIRONMENT.get_template('pet9.html')
+            template_vars = {
+                'title': title,
+                'name':'browse',
+                'bodyid':"browsePage",
+                'map':"use",
+                'number':number
+            }
+            self.response.write(template.render(template_vars))
         else:
-            self.response.write('<h1>FILE NOT FOUND</h1>')
-            self.response.write('<h2>Try a different URL</h2>')
-        
-        template_vars = {
-            'title': title,
-            'name':'browse',
-            'bodyid':"browsePage",
-            'map':"use",
-            'number':number
-        }
-        self.response.write(template.render(template_vars))
-
-class ErrorHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.write('<h1>FILE NOT FOUND</h1>')
-        self.response.write('<h2>Try a different URL</h2>')
-
+            title = "Paw Wow - Home"
+            template_vars = {
+                'title': title,
+                'name':'index',
+                'bodyid':"index",
+                'map':"not"
+            }
+            template = JINJA_ENVIRONMENT.get_template('index.html')
+            self.response.out.write(template.render(template_vars))
+            
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/index.html', MainHandler),

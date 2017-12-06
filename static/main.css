@@ -490,6 +490,7 @@ footer .col-md-8{
     .abouttext2{
       font-size: 25px;
     }
+
 }
   
 
@@ -539,6 +540,10 @@ footer .col-md-8{
     .textsinglepet{
       font-size: 25px;
   }
+  .ui-autocomplete {
+      height: 800px;
+      width:20%;
+   }
 }
 /*
   ========================================
@@ -586,6 +591,10 @@ footer .col-md-8{
       display: block;
       margin: auto;
     }
+    .ui-autocomplete {
+      height: 300px;
+      width:20%;
+    }
   }
 
  
@@ -615,6 +624,23 @@ footer .col-md-8{
   z-index:2;
 }
 
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  autocomplete for searchbox
+  ========================================
+*/
 .ui-autocomplete {
-    position: relative;
+    /*position: absolute;*/
+    max-height: 600px;
+    width: 20%;
+    /*max-width: 300px;*/
+/*    opacity: 0;
+    display: none;
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;*/
+    overflow-y: auto;
+    overflow-x: auto; /* vertical scrollbar */
 }

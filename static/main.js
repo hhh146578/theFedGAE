@@ -376,7 +376,10 @@ $(document).ready(function(){
         "MINIATURE BULL TERRIER"
     ];
     $('#Searchbox').autocomplete({
-      source: breeds
+        appendTo: $("#Searchbox").next(),
+        source: breeds
+        // open: function () { $('ul.ui-autocomplete').addClass('opened') },
+        // close: function () { $('ul.ui-autocomplete').removeClass('opened').css('display','block'); },
     });
 
 

@@ -447,6 +447,80 @@ footer .col-md-8{
     visibility: hidden;
 }
 
+
+/*
+  ========================================
+  Large Screen View **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+@media only screen and (max-width: 1024px) {
+    /*.bg-faded{
+        background: -webkit-linear-gradient(left top, lightgrey , gold);
+        background: -o-linear-gradient(left top, lightgrey , gold);
+        background: linear-gradient(to left top, lightgrey , gold);
+    }*/
+    #footer ul{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #result{
+        text-align: left;
+    }
+
+    #footer p{
+        visibility: hidden;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+}
+
+/*
+  ========================================
+  Tablet View **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+@media only screen and (max-width: 767px) {
+    /*project page part */
+    #projectContent{
+        display: inline-block;
+    }
+
+    #description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    #showprojectimages{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+}
+
 /*
   ========================================
   Mobile View **** Claire Koo contribution – SI 539****
@@ -488,80 +562,6 @@ footer .col-md-8{
     }
     #Searchbox{
         width:70%;
-    }
-}
-
-/*
-  ========================================
-  Tablet View **** Claire Koo contribution – SI 539****
-  ========================================
-*/
-@media only screen and (max-width: 767px) {
-    /*project page part */
-    #projectContent{
-        display: inline-block;
-    }
-
-    #description {
-        display: inline-block;
-        width: 50%;
-        vertical-align: top;
-    }
-    #showprojectimages{
-        display: inline-block;
-        vertical-align: top;
-    }
-    .navbar-light .navbar-toggler {
-        border-color: rgba(0,0,0,1);
-        margin-top: 0.54rem;
-    }
-    .nav-item{
-        width: 100%;
-        padding-top: 0.125rem;
-        padding-bottom: 0.125rem;
-    }
-
-    #navbarSearch{
-        width:100%;
-    }
-}
-
-
-/*
-  ========================================
-  Large Screen View **** Claire Koo contribution – SI 539****
-  ========================================
-*/
-@media only screen and (max-width: 1024px) {
-    /*.bg-faded{
-        background: -webkit-linear-gradient(left top, lightgrey , gold);
-        background: -o-linear-gradient(left top, lightgrey , gold);
-        background: linear-gradient(to left top, lightgrey , gold);
-    }*/
-    #footer ul{
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #result{
-        text-align: left;
-    }
-
-    #footer p{
-        visibility: hidden;
-    }
-    .navbar-light .navbar-toggler {
-        border-color: rgba(0,0,0,1);
-        margin-top: 0.54rem;
-    }
-    .nav-item{
-        width: 100%;
-        padding-top: 0.125rem;
-        padding-bottom: 0.125rem;
-    }
-
-    #navbarSearch{
-        width:100%;
     }
 }
 

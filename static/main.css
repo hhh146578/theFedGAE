@@ -1,0 +1,580 @@
+/*
+  ========================================
+  Basic Setup **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker);
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    padding-top: 50px;
+    margin:auto;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Permanent Marker', cursive !important;
+}
+
+p{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/*
+  ========================================
+  Top Navigation **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+
+nav{
+    background-color: #e32636 !important;
+}
+
+.logo-first {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+/*Reference for colorchange on hover: https://codepen.io/raaasin/pen/quvHr*/
+.logo-first:hover, .logo-first:focus{
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+.logo-first:focus{
+    outline:1px solid red;
+    background:yellow;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: #34495e;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+.navbar-brand{
+    padding-bottom: 0.5rem;
+}
+
+#navbarNav a, #navbarSearch, #play, #pause, #restart, #btnContactUs {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    background-color: #e32636;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: 0;
+}
+.nav-item{
+    width: 10rem;
+    padding-right: 0.25rem;
+}
+
+#navbarNav a:hover, #navbarSearch:hover, #play:hover, #pause:hover, #restart:hover, #btnContactUs:hover, #navbarNav a:focus, #navbarSearch:focus, #play:focus, #pause:focus, #restart:focus, #btnContactUs:focus{
+    transition: 0.3s;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+#navbarNav a:focus, #navbarSearch:focus, #play:focus, #pause:focus, #restart:focus, #btnContactUs:focus{
+    outline:1px solid red;
+    background:yellow;
+}
+
+#navbarSearch{
+    width: 6rem;
+}
+#navbarNav .active a{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.nav-link i{
+    color: white;
+}
+
+#navbarNav .active i, #navbarNav a:hover i, #navbarNav a:focus i{
+    color: #e32636;
+}
+
+/*
+  ========================================
+  Jumbotron **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+.display-3{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.jumbotron h1,h2,h3{
+    font-family: 'Permanent Marker', cursive !important;
+    color: white;
+}
+
+.jumbotron p{
+    font-family: 'Oswald', sans-serif !important;
+    color: white;
+}
+
+.welcome .jumbotron {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("catndog.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.gallery .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("dogwalking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 20px right 0px;
+    position: relative;
+}
+
+.contactus .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("cat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.ourprocess .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("dogwaiting.png");
+    background-repeat: no-repeat;
+    background-position: top 20px right 0px;
+    position: relative;
+    background-size: contain;
+}
+
+.quicklinks .col-lg-9 a{
+    color: black;
+    text-decoration: none;
+}
+
+.quicklinks .col-lg-9 a:hover, .quicklinks .col-lg-9 a:focus{
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+.quicklinks .col-lg-9 a:focus{
+    outline:1px solid red;
+    background:yellow;
+}
+
+.quicklinks .col-lg-3 img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.audiogorups{
+    text-align: center;
+}
+
+section {
+    margin: auto;
+}
+
+section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gallery img{
+    height: 80%;
+    width: 80%;
+    margin: 2rem;
+    border-radius:2rem ;
+}
+
+#target{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+form p{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.dogwoof h6{
+    text-align: center;
+    color: #e32636;
+}
+
+
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  browse dogs page
+  ========================================
+*/
+.imgContainer.caption {
+    position: relative;
+}
+.imgContainer.caption .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.imgContainer.caption .text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+.imgContainer.caption:hover .text, .imgContainer.caption:focus .text{
+    opacity: 1;
+
+}
+.imgContainer.caption:hover img, .imgContainer.caption:focus img{
+    opacity: 0.5;
+}
+.imgContainer.caption p{
+    font-size: 2rem !important;
+    font-family: 'Permanent Marker', cursive !important;
+}
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  scroll top button
+  ========================================
+*/
+
+.scrolltopbutton{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    border: solid;
+    background-color: #f7f7f7;
+    color: #e32636;
+    border-radius: 1rem;
+    opacity: 0;
+}
+
+.scrolltopbutton span{
+    font-family: 'Oswald', sans-serif !important;
+}
+
+/*
+  ========================================
+  Skip to Main Navigation **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+
+.skiptomain{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  googel map
+  ========================================
+*/
+
+#map{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px ;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+/*
+  ========================================
+  Contact Us **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+
+#ouroffice{
+    text-align: center;
+}
+
+/*
+  ========================================
+  Parallax **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+.rabbitpet{
+    background-image: url("rabbitpet.png");
+    position: relative;
+}
+
+.catplaying{
+    background-image: url("catplaying.png");
+    position: relative;
+}
+.petplaying{
+    background-image: url("petplaying.png");
+    position: relative;
+}
+.rabbitpet, .catplaying, .petplaying {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.parallaxInner {
+  position: absolute;
+  top: 30%;
+}
+
+/*
+  ========================================
+  how it works page **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+.ourprocess h2{
+  color:#e32636;
+}
+
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  Footer
+  ========================================
+*/
+
+footer {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    margin-top: 4rem;
+    /*margin-bottom: 0.5rem;*/
+    background-color: #f7f7f7;
+    padding: 1rem;
+    color: gray;
+    /*background: -webkit-linear-gradient(left top, lightgrey , gold);
+    background: -o-linear-gradient(left top, lightgrey , gold);
+    background: linear-gradient(to left top, lightgrey , gold);*/
+}
+
+.social-buttons{
+    font-size: 1.5rem;
+}
+
+.list-inline-item{
+    padding-right: 0.5rem;
+}
+
+i{
+    color: #e32636;
+}
+
+footer small{
+    font-family: 'Oswald', sans-serif;
+}
+
+footer .col-md-8{
+    text-align: right;
+}
+
+#footer p{
+    visibility: hidden;
+}
+
+/*
+  ========================================
+  Mobile View **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+@media only screen and (max-width: 419px) {
+
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .imgContainer#caption .text h1 {
+        font-size: 1.5rem;
+    }
+    #ouroffice{
+        padding-top: 1rem;
+    }
+    #Searchbox{
+        width:70%;
+    }
+}
+
+/*
+  ========================================
+  Tablet View **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+@media only screen and (max-width: 767px) {
+    /*project page part */
+    #projectContent{
+        display: inline-block;
+    }
+
+    #description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    #showprojectimages{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+}
+
+
+/*
+  ========================================
+  Large Screen View **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+@media only screen and (max-width: 1024px) {
+    /*.bg-faded{
+        background: -webkit-linear-gradient(left top, lightgrey , gold);
+        background: -o-linear-gradient(left top, lightgrey , gold);
+        background: linear-gradient(to left top, lightgrey , gold);
+    }*/
+    #footer ul{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #result{
+        text-align: left;
+    }
+
+    #footer p{
+        visibility: hidden;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+}
+
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  Loading
+  ========================================
+*/
+#loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:2;
+    background:url("load.gif") no-repeat center center rgba(0,0,0,0.25)
+}

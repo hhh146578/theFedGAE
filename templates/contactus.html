@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+    <main role="main" id="main" class="contactus" tabindex="-1">
+        <!-- Contact Us Form -->
+        <!-- Adapted from: https://bootsnipp.com/snippets/featured/contact-us-page -->
+        <div class="jumbotron">
+            <!-- Jumbotron contents **** Claire Koo contribution – SI 539**** -->
+            <div class="col-lg-6">
+                <h1 class="display-3">Woof woof!<br>Contact Us</h1>
+                <p class="lead">Bark or holler at us! Adopting a pet is a big step — but we have a feeling your family is ready to grow. If you have any questions about getting tips on choosing the right pet for your lifestyle, preparing your home for a furry family member, or becoming a training expert before bringing your pet home, you know we are here for you. For more information about pet adoption, shoot us the message by filling the form below.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">
+                                            Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </span>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">
+                                            Subject</label>
+                                        <select id="subject" name="subject" class="form-control" required="required">
+                                            <option value="na" selected="">Choose One:</option>
+                                            <option value="service">Adoption Services</option>
+                                            <option value="suggestions">Potential Pets</option>
+                                            <option value="product">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="message">
+                                            Message</label>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                        Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4" id="ouroffice">
+                    <form>
+                        <legend><span class="glyphicon glyphicon-globe"></span>Our office</legend>
+                        <address>
+                            <strong>Paw Wow Pet Adoption Agency</strong>
+                            <br> 1234 Jabberwok Lane
+                            <br> San Francisco, CA 94107
+                            <br>
+                            <abbr title="Phone">
+                                P:</abbr>
+                            (123) 567-5809
+                        </address>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  google map -->
+    <div id="map">
+    </div>
+
+{% endblock %}

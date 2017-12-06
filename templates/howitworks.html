@@ -1,0 +1,36 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+    <main role="main" id="main" class="ourprocess" tabindex="-1">
+        <!-- Jumbotron contents **** Claire Koo contribution – SI 539**** -->
+        <div class="jumbotron">
+            <div class="col-lg-6">
+                <h1 class="display-3">About <br>Our Process</h1>
+                <p class="lead">Thank you for your interest in pet adoption! Whether you’re just looking, or you’re ready to adopt, we’re here to provide the necessary information about how it works for adopters to help their pets adjust to life in their new home.</p>
+            </div>
+        </div>
+        <div class="container w3-container">
+            <!-- Parallax effects from: https://www.w3schools.com/howto/howto_css_parallax.asp -->
+            <div class="col-lg-12 w3-center w3-animate-right rabbitpet">
+                <div class="parallaxInner" tabindex="1">
+                    <h1>Step 1: Rescue</h1>
+                    <p>Our world-renowned pet rescue team traverses the globe, from the hightops of the Himalayas to the subterraneous depths of the Pacific Ocean, to find and rescue endangered animals. Many of these creatures are endangered due to hazardous environmental conditions, human-acquired injuries, or natural causes. We befriend, heal, and house them in our state-of-the-art EarthEco facilities located in Quirky Pet Adoption Agency headquarters across the world.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 w3-center w3-animate-left catplaying">
+                <div class="parallaxInner" tabindex="1">
+                    <h1>Step 2: Rehabilitation</h1>
+                    <p>After introduction into our facilities, our animals are welcomed via creation of their own personalized living environments, conditioned based on temperature, humidity, foliage, sunlight exposure, and dietary needs. We make sure that each critter has a home that will warrant a healthy and wholesome recovery.</p>
+                </div>
+            </div>
+            <div class="col-lg-12 w3-center w3-animate-right petplaying">
+                <div class="parallaxInner" tabindex="1">
+                    <h1>Step 3: Relocation</h1>
+                    <p>After specifically-designated periods of time, our critters are ready to move on to another home. That’s where you come in! We offer personal consultations to match your personality, lifestyle, and geographic location to a pet that’s perfect for you. We make sure that the transition happens smoothly, and that enough time is granted for you and your new friend to become calm and comfortable with one another.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ****Hung-Wen Chen  contribution – SI 539****  head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="static/main.css">
+    <title>{{ title }}</title>
+</head>
+
+
+<body data-spy="scroll" data-target="#nav" id={{bodyid}}>
+    <!-- ****Hung-Wen Chen  contribution – SI 539**** navbar -->
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  loading -->
+    <div id="loading"></div>
+    <header id="home">
+        <nav class="navbar fixed-top navbar-toggleable-lg navbar-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="logo-first">Pow Wow</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav" class="navbar-nav mr-auto">
+                    <li {% if name == "index" %} class="nav-item active mx-auto" {% else %} class="nav-item mx-auto" {% endif %}>
+                        <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+                    </li>
+                   <li {% if name == "browse" %} class="nav-item active mx-auto" {% else %} class="nav-item mx-auto" {% endif %}>
+                   		<a class="nav-link" href="browse.html"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Browse Pets</a>
+                    </li>
+                    <li {% if name == "howitworks" %} class="nav-item active mx-auto" {% else %} class="nav-item mx-auto" {% endif %}>
+                        <a class="nav-link" href="howitworks.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Our Process</a>
+                    </li>
+                    <li {% if name == "contactus" %} class="nav-item active mx-auto" {% else %} class="nav-item mx-auto" {% endif %}>
+                        <a class="nav-link" href="contactus.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Contact Us</a>
+                    </li>
+                    <!-- Searchbox **** Claire Koo contribution – SI 539**** -->
+                    <li>
+                        <form class="form-inline mx-auto">
+                        <input id="Searchbox" class="form-control mx-auto" type="search" aria-label="Search">
+                        <button  id="navbarSearch" class="btn btn-outline mx-auto" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  scrolltopbutton -->
+    <button class="scrolltopbutton" type="button"><i class="fa fa-arrow-up" aria-hidden="true"><span>Top</span></i></button>
+
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  footer -->
+    <footer id="footer" class="load">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <small>&copy; 2017 Paw Wow Pet Adoption Agency</small>
+                </div>
+                <div class="col-md-8">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/hhh146578/theFed">
+                                <i class="fa fa-github" title = "github" aria-hidden = "true"></i>
+                                <p>github</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/Adoptapet-134008530597086/?modal=admin_todo_tour/">
+                                <i class="fa fa-facebook" title = "facebook" aria-hidden = "true"></i>
+                                <p>facebook</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
+
+    {% if map == "use" %}
+        {% if number %}
+            <script type="text/javascript">
+                var map;
+                function initMap() {
+                  var mapDiv = document.getElementById('map');
+                  var map = new google.maps.Map(mapDiv, { 
+                    zoom: 10,
+                    center: new google.maps.LatLng(42.279594,-83.732124)
+                  });
+                 
+                  var smallIcon = {
+                    url: "static/({{ number }}).jpg", // url
+                    scaledSize: new google.maps.Size(50, 50), // scaled size
+                  }
+                 
+                  var newMarker = new google.maps.Marker({
+                    position: {lat: 42.279594, lng: -83.732124},
+                    map: map,
+                    icon: smallIcon,
+                    draggable: true,
+                  });
+
+                    google.maps.event.addDomListener(window, "resize", function() {
+                        var center = map.getCenter();
+                        google.maps.event.trigger(map, "resize");
+                        map.setCenter(center);
+                    });
+                }
+            </script> 
+
+        {% else %}
+            <script src="static/generateMap.js"></script>
+        {% endif %}
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGD352Uy7zH5XMLZ__x2XyuMyUOxVDLgQ&language=en&callback=initMap">
+            </script>
+    {% endif %}
+    <script src="static/main.js"></script>
+
+</body>
+
+</html>

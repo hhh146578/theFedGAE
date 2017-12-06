@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <main role="main" id="main" class="welcome" tabindex="-1">
+        <!-- Jumbotron contents **** Claire Koo contribution – SI 539**** -->
+        <div class="jumbotron">
+            <div class="welcome col-lg-6">
+                <h1 class="display-3">Welcome to Paw Wow</h1>
+                <p class="lead">We are a pet adoption agency unlike any other! Not only do we safely rescue, rehabilitate, and care for our favorite critters, we are also famous for housing over 300 different species of animals! Whether you are a cozy, cuddly character or an energetic adventurer, we know we’ll find the perfect pet partner for you!</p>
+            </div>
+        </div>
+        <div class="container quicklinks">
+            <div class="row">
+                <div class="col-lg-9">
+                    <a href="browse.html"><h4>Browse Our Pets</h4></a>
+                    <p>Find your newest family member today or Meet the pets of Paw Wow Pet Adoption Agency</p>
+                    <a href="howitworks.html"><h4>Learn Our Process</h4></a>
+                    <p>We care for and match our pets like no one else</p>
+                    <a href="contactus.html"><h4>Contact Us</h4></a>
+                    <p>We love talking to fellow pet-lovers!</p>
+                </div>
+                <div class="col-lg-3 dogwoof">
+                    <img src="static/doggreeting.gif" alt="dog wagging its tail" tabindex="1" data-hover-sound="static/DogWoof-SoundBible.com-457935112.mp3"/>
+                    <h6>Pet me!</h6>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

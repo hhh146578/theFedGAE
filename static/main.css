@@ -620,9 +620,6 @@ footer .col-md-8{
     z-index:2;
     background:url("load.gif") no-repeat center center rgba(0,0,0,0.25)
 }
-.fixed-top{
-  z-index:2;
-}
 
 /*
   ========================================

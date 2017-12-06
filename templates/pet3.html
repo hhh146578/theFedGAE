@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <!-- ****Yen-Ting Pen  contribution – SI 539****  content-->
+    <!-- ****Yen-Ting Pan  contribution – SI 539****  content-->
     <main role="main" class="gallery" id="main" tabindex="-1">
         <!-- Jumbotron contents **** Claire Koo contribution – SI 539**** -->
         <div class="jumbotron">
@@ -12,31 +12,33 @@
             </div>
         </div>
 
-        <div class="container text-left">
+        <div class="container text-left" id = "pettext">
             <div class="row justify-content-center">
                 <div class="col-sm-4">
+                    <div id = "petpage">
                     <section id ="test">
                     <div id="tagforscrolldown"><p>&nbsp;</p></div>
-                    <div class = "text textsinglepet"><h1>Go</h1><h1>Male</h1><h1>8 months</h1></div>
-                    <img src="static/(3).jpg" class="img-fluid textsinglepet2" alt="dog"/>
-                    <p class="col-12 col-sm-6 col-md-7 textsinglepet3">
+                    <div class = "text textsinglepet text-center" id = "pettitle"><h1>Go</h1><h1>Male</h1><h1>8 months</h1></div>
+                    <img src="static/(3).jpg" class="img-fluid" alt="dog"/>
+                    <p class="col-lg-12 col-sm-8 col-md-12 textsinglepet text">
                             Age - 8 months old<br>
                             Weight - 5 lb<br>
                             Gender - Male<br>
                             Breed - Miguelo<br>
                             Fun Fact 1: Favorite Toy - a stuffed sheep called Kevin<br>
                             Fun Fact 2: Loves tummy rubs
-                        </p>
+                         </p>
                     </section>
                 </div>
-               
-        
-      
-                <section id = "aboutsection">
-                    <h2 class="display-4 text-center">About</h2>
-                    <h3>
+            </div>
+                    <section id = "aboutsection">
+                    <div id = "abouttext">
+                    <h1 class="display-4 text-center ">About</h1>
+                    <h1 class="display-4 text-center">
                       Go
-                    </h3>
+                    </h1>
+                    <div class = "abouttext2">
+
                     <div>
                       Miguelo
                     </div>
@@ -53,10 +55,12 @@
                     <div>
                       He loves people and playing fetch
                     </div>
+                     </div>
                     <br>
+                </div>
 
                 </section>
-            </div>
+             </div>
         </div>
     </main>
     

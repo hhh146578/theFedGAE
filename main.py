@@ -178,5 +178,3 @@ app = webapp2.WSGIApplication([
     ('/pet.*', petHandler),
     ('/.*', MainHandler)
 ], debug=True)
-
-

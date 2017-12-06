@@ -23,6 +23,20 @@ $(document).ready(function(){
             }, 300);
         }
     });
+  
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  navbar control 
+  ========================================
+*/
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var opened = $(".navbar-collapse").hasClass("collapse show");
+        if (opened === true && !clickover.hasClass("navbar-toggler")) {
+            $("button.navbar-toggler").click();
+        }
+    });
 
 
 /*
@@ -68,7 +82,6 @@ $(document).ready(function(){
         "WELSH CORGI PEMBROKE",
         "IRISH SOFT COATED WHEATEN TERRIER",
         "YUGOSLAVIAN SHEPHERD DOG - SHARPLANINA",
-        "J?MTHUND",
         "BASENJI",
         "BERGER DE BEAUCE",
         "BERNESE MOUNTAIN DOG",
@@ -106,7 +119,6 @@ $(document).ready(function(){
         "WELSH TERRIER",
         "GRIFFON BRUXELLOIS",
         "GRIFFON BELGE",
-        "PETIT BRABAN?ON",
         "SCHIPPERKE",
         "BLOODHOUND",
         "WEST HIGHLAND WHITE TERRIER",
@@ -126,7 +138,6 @@ $(document).ready(function(){
         "WEIMARANER",
         "WESTPHALIAN DACHSBRACKE",
         "FRENCH BULLDOG",
-        "KLEINER M?NSTERL?NDER",
         "GERMAN HUNTING TERRIER",
         "GERMAN SPANIEL",
         "FRENCH WATER DOG",
@@ -152,10 +163,7 @@ $(document).ready(function(){
         "WELSH SPRINGER SPANIEL",
         "SUSSEX SPANIEL",
         "KING CHARLES SPANIEL",
-        "SM?LANDSST?VARE",
         "DREVER",
-        "SCHILLERST?VARE",
-        "HAMILTONST?VARE",
         "FRENCH POINTING DOG - GASCOGNE TYPE",
         "FRENCH POINTING DOG - PYRENEAN TYPE",
         "SWEDISH LAPPHUND",
@@ -214,7 +222,6 @@ $(document).ready(function(){
         "FINNISH LAPPHUND",
         "HOVAWART",
         "BOUVIER DES FLANDRES",
-        "KROMFOHRL?NDER",
         "BORZOI - RUSSIAN HUNTING SIGHTHOUND",
         "BERGAMASCO SHEPHERD DOG",
         "ITALIAN VOLPINO",
